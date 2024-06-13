@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-if (license ==="None") {
+if (license === "None") {
 return "";
 }
 return `[${license}](https://choosealicense.com/licenses/${license
@@ -29,6 +29,7 @@ function renderLicenseSection(license) {
     return "";
   }
   return `## License 
+
   This project is licensed under the ${renderLicenseLink(license)} license.`;
 }
 
